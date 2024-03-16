@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Container(
             height: double.infinity,
-            child: Image.asset('assets/img/WhatsApp Image 2024-03-05 at 5.38.03 PM.jpeg',fit: BoxFit.fill,)),
+            child: Image.asset('assets/img/quality_restoration_20240308120306353.jpg',fit: BoxFit.fill,)),
       ),
     );
   }

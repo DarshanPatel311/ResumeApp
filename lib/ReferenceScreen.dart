@@ -1,23 +1,19 @@
-
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-import 'List.dart';
-
-class Education extends StatefulWidget {
-  const Education({super.key});
+class Reference extends StatefulWidget {
+  const Reference({super.key});
 
   @override
-  State<Education> createState() => _EducationState();
+  State<Reference> createState() => _ReferenceState();
 }
 
-class _EducationState extends State<Education> {
-  TextEditingController txtCourse=TextEditingController();
-  TextEditingController txtSchool=TextEditingController();
-  TextEditingController txtGrade =TextEditingController();
-  TextEditingController txtYear=TextEditingController();
-
+class _ReferenceState extends State<Reference> {
+  TextEditingController txtRefeName=TextEditingController();
+  TextEditingController txtRJobTitle=TextEditingController();
+  TextEditingController txtRCompanyName =TextEditingController();
+  TextEditingController txtREmail=TextEditingController();
+  TextEditingController txtRPhone=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +30,7 @@ class _EducationState extends State<Education> {
         ),
         backgroundColor: Color(0xff5A52A5),
         title: Text(
-          "Education",
+          "Reference",
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -46,11 +42,11 @@ class _EducationState extends State<Education> {
               onPressed: () {
                 setState(() {
                   Navigator.of(context).pushNamed('/home');
-                 Course= txtCourse.text;
-                  Grade=txtGrade.text;
-                  School=txtSchool.text;
-                 Year= txtYear.text;
-
+                  RefeName=txtRefeName.text;
+                  RCompanyName=txtRCompanyName.text;
+                  REmail=txtREmail.text;
+                    RjobTitle=txtRJobTitle.text;
+                    RPhone =txtRPhone.text;
                 });
 
               },
@@ -70,7 +66,7 @@ class _EducationState extends State<Education> {
             ),
             Center(
               child: Container(
-                height: 310,
+                height: 400,
                 width: 390,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -86,7 +82,7 @@ class _EducationState extends State<Education> {
                       Container(
                         height: 55,
                         child: TextField(
-                            controller: txtCourse,
+                            controller: txtRefeName,
                             textInputAction: TextInputAction.next,
                             maxLines: 1,
                             decoration: InputDecoration(
@@ -103,7 +99,7 @@ class _EducationState extends State<Education> {
                                 borderSide: BorderSide(width: 2,color: Colors.black26),
                                 borderRadius: BorderRadius.circular(7),
                               ),
-                              label:Text('Course/Degree',style: TextStyle(
+                              label:Text('Reference Name',style: TextStyle(
                                   color: Colors.black38
                               ),),
                             ),
@@ -113,7 +109,7 @@ class _EducationState extends State<Education> {
                       Container(
                         height: 55,
                         child: TextField(
-                            controller: txtSchool,
+                            controller: txtRJobTitle,
                             textInputAction: TextInputAction.next,
 
                             maxLines: 1,
@@ -134,7 +130,7 @@ class _EducationState extends State<Education> {
                                 borderSide: BorderSide(width: 2,color: Colors.black26),
                                 borderRadius: BorderRadius.circular(7),
                               ),
-                              label:Text('School / University',style: TextStyle(
+                              label:Text('Job Title ',style: TextStyle(
                                   color: Colors.black38
                               ),),
                             ),
@@ -144,7 +140,7 @@ class _EducationState extends State<Education> {
                       Container(
                         height: 55,
                         child: TextField(
-                            controller: txtGrade,
+                            controller: txtRCompanyName,
 
                             textInputAction: TextInputAction.next,
                             decoration: InputDecoration(
@@ -162,7 +158,7 @@ class _EducationState extends State<Education> {
                                 borderSide: BorderSide(width: 2,color: Colors.black26),
                                 borderRadius: BorderRadius.circular(7),
                               ),
-                              label:Text('Grade/Score',style: TextStyle(
+                              label:Text('Company Name',style: TextStyle(
                                   color: Colors.black38
                               ),),
                             ),
@@ -172,7 +168,7 @@ class _EducationState extends State<Education> {
                       Container(
                         height: 55,
                         child: TextField(
-                            controller: txtYear,
+                            controller: txtREmail,
 
                             textInputAction: TextInputAction.done,
                             decoration: InputDecoration(
@@ -190,7 +186,34 @@ class _EducationState extends State<Education> {
                                 borderSide: BorderSide(width: 2,color: Colors.black26),
                                 borderRadius: BorderRadius.circular(7),
                               ),
-                              label:Text('Year',style: TextStyle(
+                              label:Text('Email',style: TextStyle(
+                                  color: Colors.black38
+                              ),),
+                            ),
+                            keyboardType: TextInputType.text),
+                      ),
+                      Container(
+                        height: 55,
+                        child: TextField(
+                            controller: txtRPhone,
+
+                            textInputAction: TextInputAction.done,
+                            decoration: InputDecoration(
+
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(width: 1,color: Colors.greenAccent),
+                                borderRadius: BorderRadius.circular(7),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(width: 2,color: Color(0xff5A52A5),),
+                                borderRadius: BorderRadius.circular(7),
+                              ),
+
+                              enabledBorder:   OutlineInputBorder(
+                                borderSide: BorderSide(width: 2,color: Colors.black26),
+                                borderRadius: BorderRadius.circular(7),
+                              ),
+                              label:Text('Phone',style: TextStyle(
                                   color: Colors.black38
                               ),),
                             ),
@@ -203,7 +226,7 @@ class _EducationState extends State<Education> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(270, 380, 0, 0),
+              padding: const EdgeInsets.fromLTRB(270, 300, 0, 0),
               child: InkWell(
                 onTap: () {
 
@@ -211,27 +234,27 @@ class _EducationState extends State<Education> {
                 child: Container(
                   height:40,
                   width: 90,
-                 decoration: BoxDecoration(
-                   color: Color(0xff5A52A5),
-                   borderRadius: BorderRadius.circular(15),
-                   boxShadow: [
-                     BoxShadow(
-                       offset: Offset(0,1),
-                       spreadRadius: 1,
-                       blurRadius: 2,
-                       color: Colors.black12,
-                     )
-                   ],
-                 ),child: Center(child: Row(
+                  decoration: BoxDecoration(
+                    color: Color(0xff5A52A5),
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0,1),
+                        spreadRadius: 1,
+                        blurRadius: 2,
+                        color: Colors.black12,
+                      )
+                    ],
+                  ),child: Center(child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                   Icon(Icons.add,color: Colors.white,size: 28,),
-                  Text("ADD",style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                  ),)
-                ],),),
+                    Icon(Icons.add,color: Colors.white,size: 28,),
+                    Text("ADD",style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                    ),)
+                  ],),),
                 ),
               ),
             ),
@@ -241,11 +264,9 @@ class _EducationState extends State<Education> {
     );
   }
 }
-String  Year ='';
-String  Grade='';
-String  School ='';
-String  Course ='';
-
-
-
+String  RefeName='';
+String  RjobTitle='';
+String  RCompanyName ='';
+String  REmail ='';
+String  RPhone ='';
 

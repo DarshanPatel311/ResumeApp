@@ -1,26 +1,29 @@
 
+import 'PersonalDetails.dart';
+
 List ResumeBuilder = [
   {
-    'Name':'acs',
-    'Img':'assets/img/WhatsApp Image 2024-03-05 at 5.38.03 PM.jpeg',
-    'Gmail':'dkpatel@gmail.com',
-    'Time':'mar 2/2024',
+    'Name':Name,
+    'Img':'assets/img/quality_restoration_20240308120306353.jpg',
+    'Gmail':Email,
+    'Time':'',
   },
-  {
-    'Name':'Name',
-    'Img':'assets/img/WhatsApp Image 2024-03-05 at 5.38.03 PM.jpeg',
-    'Gmail':'dkpatel@gmail.com',
-    'Time':'mar 2/2024',
-  },
-  {
-    'Name':'Niraj',
-    'Img':'assets/img/WhatsApp Image 2024-03-05 at 5.38.03 PM.jpeg',
-    'Gmail':'dkpatel@gmail.com',
-    'Time':'mar 2/2024',
-  },
+
 
 
 ];
 List name=[
+
+];
+List Selectobj=[
+  {
+    'Text':'A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.',
+  },
+  {
+    'Text':' a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.',
+  },
+  {
+    'Text':'A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.',
+  }
 
 ];

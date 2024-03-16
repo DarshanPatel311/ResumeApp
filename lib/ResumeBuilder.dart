@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:resumeapp/PersonalDetails.dart';
 
 import 'List.dart';
 
@@ -40,7 +41,7 @@ class _fristState extends State<frist> {
                    ),
 
                    Padding(
-                     padding: const EdgeInsets.fromLTRB(0, 660, 0, 0),
+                     padding: const EdgeInsets.fromLTRB(0, 702, 0, 0),
                      child: Stack(
                        children: [
                          Container(
@@ -61,19 +62,27 @@ class _fristState extends State<frist> {
                      ),
                    ),
                    Padding(
-                     padding: const EdgeInsets.fromLTRB(170, 630, 170, 0),
+                     padding: const EdgeInsets.fromLTRB(170, 670, 170, 0),
                      child: Container(
                        height: 65,
                        width: 65,
                        decoration: BoxDecoration(
                            color: Color(0xffF0F1F3),
-                           shape: BoxShape.circle
+                           shape: BoxShape.circle,
+                         boxShadow: [
+                           BoxShadow(
+                             offset: Offset(0,1),
+                             spreadRadius: 0.5,
+                             blurRadius: 1,
+                             color: Colors.black54,
+                           )
+                         ],
 
                        ),
                      ),
                    ),
                    Padding(
-                     padding: const EdgeInsets.fromLTRB(176, 635, 0, 0),
+                     padding: const EdgeInsets.fromLTRB(176, 676, 0, 0),
                      child: InkWell(
                        onTap: () {
                          Navigator.pushNamed(context, '/home');
@@ -84,7 +93,14 @@ class _fristState extends State<frist> {
                          decoration: BoxDecoration(
                              color: Color(0xff5A52A5),
                              shape: BoxShape.circle
-
+                            ,boxShadow: [
+                           BoxShadow(
+                             offset: Offset(0,1.5),
+                             spreadRadius: 0.5,
+                             blurRadius: 2,
+                             color: Colors.black54,
+                           )
+                         ],
                          ),
                          child: Center(
                            child: Icon(Icons.add,color: Colors.white,size: 40,),
@@ -150,15 +166,15 @@ Widget ditel  (index )
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start  ,
                   children: [
-                    Text(ResumeBuilder[index]['Name'],style: TextStyle(
+                    Text(Name,style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 15
                     ),),
-                    Text(ResumeBuilder[index]['Gmail'],style: TextStyle(
+                    Text(Email ,style: TextStyle(
                         color: Colors.grey
                     ),),
-                    Text(ResumeBuilder[index]['Time'],style: TextStyle(
+                    Text(DOB,style: TextStyle(
                         color: Colors.grey
                     ),),
 

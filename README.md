@@ -20,7 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 <img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/d9119de2-2384-4b6b-befc-a3c9d8f5d460" width="300">
 <img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/ea0996c4-7605-4ac0-aa87-92b4fb49235f" width="300">
 <img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/fa88706a-7561-47f8-93c5-71d5acd6681c" width="300">
-<img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/beb83bc5-8559-4e0a-87d4-12a760d94ebb" width="300">
+
 <img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/8a29c501-b95b-4ba3-bc56-67dbb786a3c4" width="300">
 <img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/8005d7ab-c123-4f83-b951-2dce9101252b" width="300">
 <img src="https://github.com/DarshanPatel311/ResumeApp/assets/143177575/e7f20de2-39b0-4f83-b340-781c3042b4c1" width="300">
